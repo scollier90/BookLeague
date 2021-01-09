@@ -54,12 +54,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Group.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202101070620448_First migration.cs" />
+    <Compile Include="Migrations\202101070620448_First migration.Designer.cs">
+      <DependentUpon>202101070620448_First migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101080235428_Added Theme class.cs" />
+    <Compile Include="Migrations\202101080235428_Added Theme class.Designer.cs">
+      <DependentUpon>202101080235428_Added Theme class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101070620448_First migration.resx">
+      <DependentUpon>202101070620448_First migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101080235428_Added Theme class.resx">
+      <DependentUpon>202101080235428_Added Theme class.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

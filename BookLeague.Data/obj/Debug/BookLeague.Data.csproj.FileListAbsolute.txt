@@ -14,3 +14,6 @@ C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.dll
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.pdb
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.Firstmigration.resources
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.AddedThemeclass.resources
