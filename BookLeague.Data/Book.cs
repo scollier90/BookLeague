@@ -47,17 +47,27 @@ namespace BookLeague.Data
     {
         [Key]
         public int BookId { get; set; }
+
+        public Guid CreatorId { get; set; }
+
         [Required]
         public string BookName { get; set; }
-        public string Description { get; set; }
+
         [Required]
         public _Genre Genre { get; set; }
+
         [Required]
         public int Rating { get; set; }
+
         [Required]
         public decimal Price { get; set; }
+
         [Required]
         public int PageCount { get; set; }
+
+        public string Description { get; set; }
+
+        [Required]
         public ICollection<Theme> Themes { get; set; }
     }
 }

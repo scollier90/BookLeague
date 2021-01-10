@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookLeague.Data\BookLeague.Data.csproj">
+      <Project>{54b46cc5-145a-4564-addd-889b855796ef}</Project>
+      <Name>BookLeague.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookLeague.Models\BookLeague.Models.csproj">
+      <Project>{b933c9b8-9577-400f-99b8-825a4de757f8}</Project>
+      <Name>BookLeague.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

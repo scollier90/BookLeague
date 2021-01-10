@@ -12,6 +12,7 @@ namespace BookLeague.Data
     {
         [Key]
         public int GroupId { get; set; }
+
         [Required]
         public string GroupName { get; set; }
 
