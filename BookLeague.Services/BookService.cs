@@ -30,6 +30,7 @@ namespace BookLeague.Services
                     PageCount = model.PageCount,
                     Description = model.Description
                 };
+
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Books.Add(entity);
@@ -43,7 +44,7 @@ namespace BookLeague.Services
             {
                 var query =
                     ctx
-                        .Notes
+                        .Books
                         .Where(e => e.CreatorId == _creatorId)
                         .Select(
                             e =>
@@ -51,8 +52,13 @@ namespace BookLeague.Services
                                 {
                                     BookId = e.BookId,
                                     BookName = e.BookName,
-
+                                    Genre = e.Genre,
+                                    Rating = e.Rating,
+                                    Price = e.Price,
+                                    PageCount = e.PageCount
                                 }
+                        );
+                return query.ToArray();
             }
         }
     }

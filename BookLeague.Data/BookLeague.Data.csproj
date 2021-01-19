@@ -66,6 +66,14 @@
     <Compile Include="Migrations\202101080235428_Added Theme class.Designer.cs">
       <DependentUpon>202101080235428_Added Theme class.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101160157100_Updated entities.cs" />
+    <Compile Include="Migrations\202101160157100_Updated entities.Designer.cs">
+      <DependentUpon>202101160157100_Updated entities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101160239512_Added creatorId to Event and Group.cs" />
+    <Compile Include="Migrations\202101160239512_Added creatorId to Event and Group.Designer.cs">
+      <DependentUpon>202101160239512_Added creatorId to Event and Group.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Theme.cs" />
@@ -80,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101080235428_Added Theme class.resx">
       <DependentUpon>202101080235428_Added Theme class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101160157100_Updated entities.resx">
+      <DependentUpon>202101160157100_Updated entities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101160239512_Added creatorId to Event and Group.resx">
+      <DependentUpon>202101160239512_Added creatorId to Event and Group.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

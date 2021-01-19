@@ -14,6 +14,7 @@ namespace BookLeague.Data
         public int EventId { get; set; }
         [Required]
         public string EventName { get; set; }
+        public Guid CreatorId { get; set; }
 
         [Required]
         [ForeignKey(nameof(Group))]

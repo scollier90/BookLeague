@@ -54,8 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookCreate.cs" />
-    <Compile Include="BookListItem.cs" />
+    <Compile Include="Book\BookCreate.cs" />
+    <Compile Include="Book\BookDetail.cs" />
+    <Compile Include="Book\BookListItem.cs" />
+    <Compile Include="Event\EventCreate.cs" />
+    <Compile Include="Event\EventDetail.cs" />
+    <Compile Include="Event\EventListItem.cs" />
+    <Compile Include="Group\GroupCreate.cs" />
+    <Compile Include="Group\GroupDetail.cs" />
+    <Compile Include="Group\GroupListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,5 +75,6 @@
       <Name>BookLeague.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

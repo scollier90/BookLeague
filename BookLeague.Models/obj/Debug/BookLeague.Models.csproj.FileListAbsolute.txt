@@ -14,3 +14,6 @@ C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\obj\Debug\BookLeague.Models.csproj.CopyComplete
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\bin\Debug\BookLeague.Data.dll
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\bin\Debug\BookLeague.Data.pdb
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Models\bin\Debug\BookLeague.Data.dll.config

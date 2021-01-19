@@ -26,10 +26,10 @@ namespace BookLeague.Models
         public decimal Price { get; set; }
 
         [Required]
-        [Display(Name = "Page count")]
+        [Display(Name = "Page Count")]
         public int PageCount { get; set; }
 
-        [MinLength(200, ErrorMessage = "Please enter more detail for the description.")]
+        [MinLength(50, ErrorMessage = "Please enter more detail for the description.")]
         [MaxLength(1000, ErrorMessage = "Please summarize the description more.")]
         public string Description { get; set; }
 
