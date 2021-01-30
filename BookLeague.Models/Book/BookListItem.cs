@@ -10,7 +10,7 @@ namespace BookLeague.Models
 {
     public class BookListItem
     {
-        [UIHint("Hidden")]
+        [Display(Name = "Book Id")]
         public int BookId { get; set; }
         [Display(Name = "Creator")]
         public Guid CreatorId { get; set; }

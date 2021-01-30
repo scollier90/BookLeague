@@ -37,6 +37,7 @@ namespace BookLeague.Data
         public DbSet<Group> Groups { get; set; }
         public DbSet<Theme> Themes { get; set; }
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

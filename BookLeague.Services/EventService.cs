@@ -58,5 +58,57 @@ namespace BookLeague.Services
                 return query.ToArray();
             }
         }
+
+        public EventDetail GetEventById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Events
+                        .Single(e => e.EventId == id);
+                return
+                    new EventDetail
+                    {
+                       EventId = entity.EventId,
+                       EventName = entity.EventName,
+                       GroupId = entity.GroupId,
+                       BookId = entity.BookId,
+                       ScheduledDate = entity.ScheduledDate
+                    };
+            }
+        }
+
+        public bool UpdateEvent(EventEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Events
+                        .Single(e => e.EventId == model.EventId && e.CreatorId == _creatorId);
+                entity.EventName = model.EventName;
+                entity.GroupId = model.GroupId;
+                entity.BookId = model.BookId;
+                entity.ScheduledDate = model.ScheduledDate;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteEvent(int eventId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Events
+                        .Single(e => e.EventId == eventId && e.CreatorId == _creatorId);
+
+                ctx.Events.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

@@ -13,8 +13,9 @@ namespace BookLeague.Models.Event
         [MinLength(2, ErrorMessage = "Please enter a longer event name.")]
         [MaxLength(100, ErrorMessage = "The event name needs to be shorter.")]
         public string EventName { get; set; }
-
+        [Required]
         public int GroupId { get; set; }
+        [Required]
         public int BookId { get; set; }
         public DateTime ScheduledDate { get; set; }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace BookLeague.Data
         Poetry,
         ScienceFiction,
         TrueCrime
-    };
+    }
     
     //seed Theme examples
     //{
@@ -60,7 +61,6 @@ namespace BookLeague.Data
         public int PageCount { get; set; }
         public string Description { get; set; }
 
-        [Required]
-        public ICollection<Theme> Themes { get; set; }
+        //public ICollection<Theme> Themes { get; set; } -- future development
     }
 }

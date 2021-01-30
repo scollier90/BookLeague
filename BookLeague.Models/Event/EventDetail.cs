@@ -14,5 +14,6 @@ namespace BookLeague.Models.Event
         public string EventName { get; set; }
         public int GroupId { get; set; }
         public int BookId { get; set; }
+        public DateTime ScheduledDate { get; set; }
     }
 }

@@ -11,7 +11,8 @@ namespace BookLeague.Models.Group
     {
         public int GroupId { get; set; }
         public string GroupName { get; set; }
-        public ICollection<ApplicationUser> Users { get; set; }
+
+        //public ICollection<ApplicationUser> Users { get; set; } - future development
 
     }
 }

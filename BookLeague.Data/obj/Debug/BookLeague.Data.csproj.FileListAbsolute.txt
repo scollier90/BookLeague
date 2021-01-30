@@ -19,3 +19,6 @@ C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.AddedThemeclass.resources
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.Updatedentities.resources
 C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.AddedcreatorIdtoEventandGroup.resources
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.CommentedoutThemesforfutureuse.resources
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.UpdatedGroup.resources
+C:\ElevenFiftyProjects\Red Badge\MVC Projects\Book League\BookLeague\BookLeague.Data\obj\Debug\BookLeague.Data.Migrations.CommentedoutApplicationUserfromgroup.resources

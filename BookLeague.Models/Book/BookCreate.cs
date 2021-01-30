@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,6 @@ namespace BookLeague.Models
         [MaxLength(1000, ErrorMessage = "Please summarize the description more.")]
         public string Description { get; set; }
 
-        [Required]
-        public ICollection<Theme> Themes { get; set; }
+        //public ICollection<Theme> Themes { get; set; }
     }
 }

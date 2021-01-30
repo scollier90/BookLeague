@@ -15,6 +15,7 @@ namespace BookLeague.Models.Group
         [MinLength(2, ErrorMessage = "Please enter a longer group name.")]
         [MaxLength(50, ErrorMessage = "The group name needs to be shorter.")]
         public string GroupName { get; set; }
-        public ICollection<ApplicationUser> Users { get; set; }
+
+        //public ICollection<ApplicationUser> Users { get; set; } - future development
     }
 }

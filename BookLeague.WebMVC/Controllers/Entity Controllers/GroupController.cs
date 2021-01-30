@@ -54,5 +54,74 @@ namespace BookLeague.WebMVC.Controllers
             var service = new GroupService(creatorId);
             return service;
         }
+
+        public ActionResult Details(int id)
+        {
+            var svc = CreateGroupService();
+            var model = svc.GetGroupById(id);
+
+            return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateGroupService();
+            var detail = service.GetGroupById(id);
+            var model =
+                new GroupEdit
+                {
+                    GroupId = detail.GroupId,
+                    GroupName = detail.GroupName
+                    //Id = detail.Id -- future development
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, GroupEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.GroupId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateGroupService();
+
+            if (service.UpdateGroup(model))
+            {
+                TempData["SaveResult"] = "Your group was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your group could not be updated.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateGroupService();
+            var model = svc.GetGroupById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteGroup(int id)
+        {
+            var service = CreateGroupService();
+
+            service.DeleteGroup(id);
+
+            TempData["SaveResult"] = "Your group was deleted.";
+
+            return RedirectToAction("Index");
+        }
     }
 }
